@@ -1,0 +1,80 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.return-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 50px); /* Adjust the height based on the header's size */
+}
+
+.notes-container {
+    width: 300px; /* Adjust width as needed */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#notes-list {
+    margin-bottom: 20px;
+    min-height: 150px; /* Adjust height as needed */
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#note-form {
+    text-align: center;
+}
+
+#note-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.note-entry {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.note-content {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.note-timestamp {
+    font-size: 12px;
+    color: #888;
+}

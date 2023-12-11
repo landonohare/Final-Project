@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding-top: 60px; /* Offset for the fixed header */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    min-height: 100vh; /* Use min-height to cover the full viewport height */
+}
+
+.header-nav {
+    background-color: #f8f8f8; /* Light grey background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    padding: 10px 0; /* Some vertical padding */
+    position: fixed; /* Fixed at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other items */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    flex-grow: 1; /* Allow the title to grow */
+}
+
+.return-link {
+    position: absolute; /* Absolute positioning */
+    right: 0; /* Align to the far right */
+    text-decoration: none;
+    color: #333; /* Darker text for better readability */
+    font-weight: bold;
+}
+
+.search-container {
+    width: 100%; /* Full width to align with the header */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top:50px;
+}
+
+#searchBox {
+    flex: 1; /* Allows the search box to grow and fill the space */
+    margin-right: 10px; /* Adds a margin to the right of the search box */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50; /* A shade of green */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+#resultsContainer {
+    width: 80%;
+    margin: 20px auto; /* Center the container on the page and add margin to the top */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between recipe cards */
+    justify-content: center; /* Center the cards in the container */
+}
+
+.recipe-card {
+    flex-basis: calc((100% - 40px) / 3); /* Example for three cards per row, adjust the divisor for more or fewer cards */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    border-radius: 4px; /* Rounded corners */
+    background: #fff; /* White background */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Margin at the bottom of each card */
+}
+
+.recipe-card img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the images cover the area nicely */
+}
+
+.recipe-card h3 {
+    padding: 10px 0; /* Padding at the top and bottom */
+}
+
+.recipe-card p {
+    padding: 0 15px; /* Padding on the sides */
+}
+
+.details-link {
+    display: block;
+    background: #007BFF; /* Blue background for the link */
+    color: #fff; /* White text */
+    text-decoration: none; /* No underline */
+    padding: 10px 0; /* Padding at the top and bottom */
+    margin-top: 10px; /* Margin at the top */
+}
+
+.details-link:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        flex-basis: calc(100% - 20px); /* Full width on smaller screens */
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .return-link {
+        position: static; /* Remove absolute positioning on small screens */
+        padding: 10px 0; /* Add some padding */
+    }
+
+    h1 {
+        order: -1; /* Move the title above the return link on small screens */
+    }
+}

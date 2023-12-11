@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landon's Portfolio</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Landon's</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="final.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <div class="service-text">
+                <h3>Website Development</h3>
+                <p> Website Development at our studio encompasses a comprehensive range of services to create visually 
+                    appealing and highly functional websites. From simple informational sites to complex e-commerce 
+                    platforms, we tailor each project to your specific needs. Our team is proficient in the latest web 
+                    technologies, including HTML, CSS, JavaScript, and various CMS platforms. We prioritize creating 
+                    responsive, user-friendly designs that ensure a seamless experience across all devices. Our process 
+                    involves close collaboration with you to ensure your vision for the site is perfectly realized, 
+                    resulting in a website that not only looks great but also performs flawlessly.
+                    Offered in HTML and CSS, HTML, or just CSS.
+                </p>
+                <h4>Starting at $500!</h4>
+                <div class="language-selection">
+                    <input type="radio" id="HTML/CSS" name="language" value="HTML/CSS" data-price="500">
+                    <label for="HTML/CSS">HTML/CSS</label>
+                    <input type="radio" id="HTML" name="language" value="HTML" data-price="500">
+                    <label for="HTML">HTML</label>
+                    <input type="radio" id="CSS" name="language" value="CSS" data-price="500">
+                    <label for="CSS">CSS</label>
+                </div>
+                <button class="buy-btn" data-service="Website Development" data-price="500">Buy Now</button>
+            </div>
+            <div class="service-image">
+                <img src="computer3.png" alt="Website Development">
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text">
+                <h3>Code Engineering</h3>
+                <h4>In C++, Java, and Python</h4>
+                <p> Code Engineering involves the expert application of programming skills to develop efficient, robust, 
+                    and scalable software solutions. Our team specializes in multiple languages including C++, Java, 
+                    and Python, ensuring versatility and precision in our approach. Whether you need a complex backend 
+                    system, a data analysis tool, or a custom software application, we bring technical expertise and 
+                    innovative problem-solving skills to meet your unique requirements. Our focus is on writing clean,
+                    maintainable code that adheres to the latest industry standards, delivering solutions that are not 
+                    only effective but also sustainable in the long term.</p>
+                <h4>Starting at $1000!</h4>
+                <div class="language-selection">
+                    <input type="radio" id="java" name="language" value="Java" data-price="1000">
+                    <label for="java">Java</label>
+                    <input type="radio" id="cpp" name="language" value="C++" data-price="1000">
+                    <label for="cpp">C++</label>
+                    <input type="radio" id="python" name="language" value="Python" data-price="1000">
+                    <label for="python">Python</label>
+                </div>
+                <button class="buy-btn" data-price="1000">Buy Now</button>
+            </div>
+            <div class="service-image">
+                <img src="computer.png" alt="Code Engineering">
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text">
+                <h3>Graphics Engineering</h3>
+                <p>Graphics Engineering is all about bringing visual concepts to life. Our team specializes in 
+                    creating stunning graphics and visual effects that can transform your projects. From 
+                    intricate designs for web and mobile interfaces to compelling 3D models and animations, 
+                    our work is characterized by creativity and attention to detail. We utilize state-of-the-art 
+                    software and techniques to produce high-quality graphics that are not only visually 
+                    impressive but also optimized for performance. Whether you need engaging visuals 
+                    for a marketing campaign, sophisticated UI/UX designs, or eye-catching 
+                    animations, our graphics engineering services are designed to make your project stand out.</p>
+                <h4>Starting at $250!!</h4>
+                <button class="buy-btn" data-service="Graphics Engineering" data-price="250">Buy Now</button>
+            </div>
+            <div class="service-image">
+                <img src="computer2.png" alt="Graphics Engineering">
+            </div>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>Landon O'Hare Portfolio &copy; 2023</p>
+    </footer>
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>SIGN UP</h2>
+            <form id="signup-form">
+                <input type="text" id="username" name="username" placeholder="Username" required autocomplete="username">
+                <input type="email" id="email" name="email" placeholder="Email" required autocomplete="email">
+                <input type="password" id="password" name="password" placeholder="Password" required autocomplete="new-password">
+                <button type="submit">SIGN UP</button>
+            </form>
+            <div class="social-login">
+                <p>OR</p>
+                <div class="social-icons">
+                    <!-- Add your social media icons here -->
+                </div>
+                <a href="#" class="login-link">Already a user? LOGIN</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

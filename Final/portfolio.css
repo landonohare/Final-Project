@@ -1,0 +1,46 @@
+
+.grid-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    padding: 10px;
+}
+
+.grid-item {
+    margin: 10px; /* Space between items */
+    width: calc(33.333% - 20px); /* Subtract the total margin from the width */
+    box-sizing: border-box; /* Include padding and borders in the element's total width */
+    text-align: center; /* Centers text horizontally */
+}
+
+.grid-item a {
+    display: block; /* Makes the anchor fill the container */
+    text-decoration: none; /* Optional: removes the underline from links */
+    color: inherit; /* Optional: link text uses the color of parent elements */
+}
+
+.grid-item img {
+    max-width: 100%; /* Ensures the image is responsive and fits within its container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.grid-item p {
+    margin-top: 10px; /* Space between the image and the text */
+    font-family:Garamond,serif;
+}
+
+#portfolio-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* This will push the footer to the bottom */
+        min-height: 100vh; /* Viewport height ensures the content is at least the height of the viewport */
+        margin: 0;
+        padding-bottom: 50px; 
+        flex-grow:1;
+}
+#portfolio-html{
+    height: 100%;
+}
+#portfolio-footer{
+    height: 50px;
+}

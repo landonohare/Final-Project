@@ -1,0 +1,306 @@
+/* Add some basic styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+#home .container{
+    font-family: Garamond, serif;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: gold 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header h1{
+    padding-left:30px;
+}
+header .highlight, header .current a {
+    color: gold;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+.container {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Spreads the children apart */
+    align-items: center; /* Aligns children vertically */
+}
+
+.left-content, .right-content {
+    flex: 1; /* Each child takes equal space */
+    padding: 20px; /* Adds some space inside the boxes */
+    margin: 10px; /* Adds some space outside the boxes */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width and height */
+    font-size:20px;
+}
+
+#lando {
+    width: 100%; /* Resize the image to fit its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Adjust maximum width as needed */
+    padding-right: 200px;
+}
+footer {
+    padding-top:20px;
+    text-align: center;
+    padding: 20px; /* Adds some padding inside the footer */
+    border-top: 2px solid #333; /* Adds a top border - adjust color and size as desired */
+    box-sizing: border-box; /* Includes padding and border in the width and height calculations */
+    margin: 0; /* Removes any default margin */
+}
+#services {
+    max-width: 1200px; /* Adjust this to the max width you want for the content */
+    margin: 0 auto; /* This will center your content in the middle of the page */
+    padding: 0 20px; /* Add padding on the sides */
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-text {
+    flex: 1; /* Allow the text container to grow */
+    max-width: 50%; /* Limit its width to half of the container */
+}
+
+.service-image {
+    flex: 1; /* Allow the image container to grow */
+    max-width: 50%; /* Limit its width to half of the container */
+}
+
+.service-image img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Keep the aspect ratio */
+}
+
+
+
+/* You may need additional responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+    }
+    
+    .service-text,
+    .service-image {
+        flex-basis: 100%;
+    }
+    
+    .service-image {
+        margin-top: 20px; /* Adds space between the text and image on smaller screens */
+    }
+}
+
+/* Make sure to clear floats if you have content following this section */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.language-selection {
+    text-align: left; /* This centers the radio buttons */
+    margin: 10px 0; /* This adds some space above and below the radio button section */
+}
+
+.service h3,
+.service h4,
+.service p,
+.service h5 {
+    margin: 0;
+    padding: 5px 0; /* This adds a little space between your headings and paragraphs */
+}
+
+button.buy-btn {
+    margin-top: 10px; /* This adds space above the buy buttons */
+    cursor: pointer; /* Changes cursor to indicate button can be clicked */
+    text-align:center;
+}
+
+/* Additional styles to ensure the layout is neat */
+.container {
+    width: 100%; /* Adjusts the width of the container to fill the screen */
+    padding: 0; /* Adjusts padding to ensure flush alignment */
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+#account-creation{
+    text-align:left;
+    padding-bottom:30%;
+    padding-top:4%;
+}
+/* ... your existing styles ... */
+/* ... your existing styles ... */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Adjust for vertical centering */
+    padding: 40px;
+    border: none;
+    width: 30%; /* Adjust the width as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 80%; /* Relative to parent width */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    width: 80%;
+    padding: 10px;
+    background-color: #e74c3c; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #c0392b; /* Darker shade for hover effect */
+}
+
+/* Style for social login buttons */
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    /* Add additional styling for social icons */
+}
+
+.login-link {
+    color: #3498db;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Full width on smaller screens */
+        margin: 20% auto;
+        padding: 20px;
+    }
+}
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image-and-form-container img {
+    max-width: 50%; /* Adjust to your preference */
+    height: auto; /* This will maintain the aspect ratio of the image */
+}
+
+
+.message-form {
+    margin-top: 20px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+}
+
+.message-form input,
+.message-form textarea,
+.message-form button {
+    width: 100%; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+}

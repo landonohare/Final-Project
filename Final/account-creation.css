@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.signup-box {
+    padding: 20px;
+    width: 300px; /* Adjust the width as needed */
+}
+
+.signup-box h2 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.signup-box form > input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-box button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-login {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-login p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 5px;
+    /* Insert your social media icons here */
+}
+
+.login-link {
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+    margin-top: 10px;
+}
